@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brocks Home Radio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Brocks Home Radio</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to Brocks Home Radio</h2>
+            <p>Here you can listen to the best music and shows 24/7!</p>
+            <!-- Include a live stream player here -->
+            <div class="stream-player">
+                <!-- Embed your live stream player code here -->
+                <!-- Example: -->
+                <iframe src="http://120.158.8.244:8000/stream.mp3" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a vibrant radio station committed to bringing you the latest music and entertainment.</p>
+            <p>Our DJs are passionate about what they do, ensuring you have a great listening experience every day.</p>
+        </div>
+    </section>
+
+    <section id="schedule" class="section">
+        <div class="container">
+            <h2>Program Schedule</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Show</th>
+                    <th>Host</th>
+                </tr>
+                <tr>
+                    <td>11:59pm - 12:00am</td>
+                    <td>All day mix</td>
+                    <td>Brock Oakley</td>
+                </tr>
+                <!-- Add more rows for other shows -->
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Got questions or song requests? Reach out to us!</p>
+            <form action="submit_contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
